@@ -27,7 +27,7 @@ const names: Name[] = [
 
 const Separator = () => <View style={{height: 5, backgroundColor: 'red'}} />;
 
-const Lab4: FC<Props> = () => {
+const Lab6: FC<Props> = () => {
   const [selectedName, setSelectedName] = useState<string>('');
 
   const handleNameSelection = (name: string) => {
@@ -37,7 +37,7 @@ const Lab4: FC<Props> = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Laboratory Work 4</Text>
+      <Text style={styles.title}>Laboratory Work 6</Text>
       <Text>Task 2: </Text>
       <Task2 />
       <Text>Task 1: </Text>
@@ -72,4 +72,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default memo(Lab4);
+export default memo(Lab6);

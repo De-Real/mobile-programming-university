@@ -21,7 +21,7 @@ const calculateTable = (
   return table;
 };
 
-const Lab4: FC<Props> = () => {
+const Lab6: FC<Props> = () => {
   const [start, setStart] = useState('');
   const [end, setEnd] = useState('');
   const [step, setStep] = useState('');
@@ -130,4 +130,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default memo(Lab4);
+export default memo(Lab6);

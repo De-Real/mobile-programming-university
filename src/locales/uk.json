@@ -1,0 +1,6 @@
+{
+  "task": "Завдання {{taskNumber}}",
+  "name": "Андрій Винарчук",
+  "laboratoryWork": "Лабораторна робота {{number}}",
+  "flag": "\uD83C\uDDFA\uD83C\uDDE6"
+}

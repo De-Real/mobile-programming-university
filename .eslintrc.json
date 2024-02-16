@@ -1,0 +1,91 @@
+{
+    "extends": [
+        "airbnb",
+        "airbnb/hooks",
+        "plugin:@typescript-eslint/recommended",
+        "prettier",
+        "plugin:prettier/recommended",
+        "plugin:react/jsx-runtime",
+        "plugin:@tanstack/eslint-plugin-query/recommended"
+    ],
+    "plugins": [
+        "@typescript-eslint",
+        "react",
+        "prettier",
+        "react-native",
+        "react-hooks",
+        "unused-imports",
+        "simple-import-sort",
+        "@tanstack/query",
+        "jest",
+        "testing-library"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "rules": {
+        "import/no-named-as-default": 0,
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "error",
+        "react/jsx-boolean-value": "warn",
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "react/prop-types": "off",
+        "prettier/prettier": "error",
+        "arrow-body-style": "warn",
+        "prefer-arrow-callback": "warn",
+        "react/function-component-definition": "off",
+        "react/self-closing-comp": "warn",
+        "react/display-name": "off",
+        "react/jsx-no-bind": "error",
+        "import/no-unresolved": 0,
+        "import/prefer-default-export": "off",
+        "import/extensions": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".ts",
+                    ".tsx"
+                ]
+            }
+        ],
+        "camelcase": "off",
+        "no-use-before-define": "off",
+        "react/style-prop-object": "off",
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": [
+            "error"
+        ],
+        "@tanstack/query/exhaustive-deps": "error",
+        "@tanstack/query/prefer-query-object-syntax": "error",
+        "import/no-extraneous-dependencies": "off",
+        "global-require": "off",
+        "testing-library/no-debugging-utils": "warn",
+        "testing-library/no-dom-import": "off",
+        "react/require-default-props": "off",
+        "no-unused-vars": "off",
+        "unused-imports/no-unused-imports": "error",
+        "unused-imports/no-unused-vars": [
+            "error",
+            {
+                "vars": "all",
+                "varsIgnorePattern": "^_",
+                "args": "after-used",
+                "argsIgnorePattern": "^_"
+            }
+        ],
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
+        "import/first": "error",
+        "import/newline-after-import": "error",
+        "import/no-duplicates": "error",
+        "func-names": "off"
+    }
+}

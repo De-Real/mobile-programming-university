@@ -1,20 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {I18nextProvider} from 'react-i18next';
+import {SafeAreaView} from 'react-native';
+
+import i18n from './i18n';
+import Lab5 from './src/lab5/Lab5';
+// Import the i18next configuration
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <I18nextProvider i18n={i18n}>
+      <SafeAreaView>
+        <Lab5 />
+      </SafeAreaView>
+    </I18nextProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
