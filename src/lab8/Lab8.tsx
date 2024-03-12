@@ -36,7 +36,6 @@ const Lab8 = () => {
     new Promise<void>((resolve, reject) => {
       db.transaction(
         tx => {
-          // Insert multiple records
           tx.executeSql(
             'INSERT INTO Personnel (departmentNumber, employeeId, lastName, dateOfBirth, position, phoneNumber) VALUES (?, ?, ?, ?, ?, ?)',
             [101, 1001, 'Doe', '1990-01-01', 'Manager', '123-456-7890'],
@@ -61,7 +60,7 @@ const Lab8 = () => {
       db.transaction(
         tx => {
           tx.executeSql(
-            'SELECT * FROM Personnel WHERE position = ?',
+            'SELECT * FROM Personnel WHERE position = ?', // TODO: REMOVE FILTER TO GET ALL
             ['Manager'],
             (_, {rows}) => {
               setDbDate(rows._array);
@@ -87,7 +86,7 @@ const Lab8 = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Laboratory Work 7</Text>
+      <Text style={styles.title}>Laboratory Work 8</Text>
       <Button title="Insert Record" onPress={insertRecord} />
       <Button
         title="Retrieve Records by Position"
